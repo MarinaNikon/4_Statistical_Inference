@@ -8,7 +8,7 @@
 
 #QUESTIONS
 #1. Import EMPLOYEE SATISFACTION SURVEY data.
-satisf_survey<-read.csv(file.choose(), header = TRUE)
+satisf_survey<-read.csv("EMPLOYEE_SATISFACTION_SURVEY.csv", header = TRUE)
 str(satisf_survey)
 head(satisf_survey)
 dim(satisf_survey)
