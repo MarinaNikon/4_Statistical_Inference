@@ -26,7 +26,7 @@ qqline(satisf_survey$satlevel, col= "blue")
 #Box-Whisker Plot for satlevel (overall)
 boxplot(satisf_survey$satlevel, col = "lightyellow",
         main='Box-Whisker Plot for satlevel',
-    xlab = "Departments", ylab = "Satisfaction Level")
+    xlab = "Department", ylab = "Satisfaction Level")
 #Interpretation: The median lies on the first quartile (Q1)
 #meaning that could be positively skewed distribution. 
 #But whiskers looks symmetric indicating no strong asymmetry.
@@ -36,8 +36,8 @@ boxplot(satisf_survey$satlevel, col = "lightyellow",
 #Box-Whisker Plot for satlevel (by Departments)
 boxplot(satisf_survey$satlevel~satisf_survey$dept, 
         col = c("lightyellow", "orange", "green"),
-        main='Box-Whisker Plot for satlevel',
-        xlab = "Departments", ylab = "Satisfaction Level")
+        main='Employee Satisfaction Level by Department',
+        xlab = "Department", ylab = "Satisfaction Level")
 #Interpretation: Median score for finance department is much
 #higher then median score for IT and sales departments.
 #Median score for IT and sales departments is equal
